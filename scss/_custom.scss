@@ -1,0 +1,73 @@
+.cs-header{
+	padding-top: 130px;
+}
+
+#audioplayer{
+	width: 540px;
+	margin: 0 auto;
+}
+
+#pButton{
+	height: 60px !important; 
+	width: 60px !important;
+	border: 3px solid #FFF;
+	border-radius: 50%;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	float:left;	
+	margin-right: 30px;
+	&:hover{
+		background-color: #FFF;
+	}
+}
+
+.play{background-image: url('../images/play.png') ;
+	&:hover{
+		background-image: url('../images/play-alt.png') ;
+	}
+}
+.pause{background-image: url('../images/pause.png') ;
+	&:hover{
+		background-image: url('../images/pause-alt.png') ;
+	}
+}
+
+#timeline{
+	width: 360px;
+	height: 10px;
+	margin-top: 25px;
+	float: left;
+	border-radius: 5px;
+	background: #FFF;
+
+}
+#playhead{
+	width: 32px;
+	height: 15px;
+	border-radius: 7px;
+	margin-top: -2px;
+	background: #006f94;
+
+}
+
+#mButton {
+	height: 60px !important; 
+	width: 60px !important;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	float:left;	
+	margin-right: 30px;
+
+}
+.mute{background-image: url('../images/mute.png') ;
+
+}
+.unmute{background-image: url('../images/unmute.png') ;
+
+}
+.audioplayer-wrapper {
+	margin-bottom: 60px !important;
+	margin-top: 60px !important;
+}
