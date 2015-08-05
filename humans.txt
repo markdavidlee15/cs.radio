@@ -3,6 +3,11 @@
 /* humanstxt.org */
 
 /* SITE */
-  Standards: HTML5, CSS3
+  Standards: HTML5, CSS3, Javascript
   Components: jQuery, Orbit, Reveal
-  Software: Coda, Textmate, Git
+  Software: Coda, Textmate, Git, Atom.io
+  Last Update: 2015/08/05
+
+/* TEAM */
+  Name: Mark David Lee Sarmiento
+  Site: http://www.markdavidlee.me
