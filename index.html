@@ -21,25 +21,34 @@
 		<div class="large-8 large-offset-2 columns text-center">
 			<audio id="radio" preload="true">
 				<source src="http://radio.cloudstaff.com/letsrock.aac">
-					<source src="http://radio.cloudstaff.com/letsrock.ogg">
-						<source src="http://radio.cloudstaff.com/letsrock.mp3">
+				<source src="http://radio.cloudstaff.com/letsrock.ogg">
+				<source src="http://radio.cloudstaff.com/letsrock.mp3">
 			</audio>
 			<div class="row audioplayer-wrapper">
 				<div id="audioplayer">
 					<img src="images/cover.png" alt="cover">
-					<p id="streamTitle"></p>
-					<a href="#" id="pButton" class="play" onclick="play()"></a>
+					<p class="now-playing">
+						<strong>Now Playing:</strong>
+						<span id="streamTitle"></span>
+					</p>
+					<a id="pButton" class="play" onclick="play()"></a>
 					<div id="timeline">
 						<div id="playhead"></div>
 					</div>
-					<a href="#" id="mButton" class="mute" onclick="mute()"></a>
+					<a id="mButton" class="mute" onclick="mute()"></a>
 				</div>
 			</div>
 			<div class="row">
-				<p>If your Radio does not AutoPlay, click one of these links : <a href="http://radio.cloudstaff.com/letsrock.oog">ogg 64k</a> | <a href="http://radio.cloudstaff.com/letsrock.aac">AAC+ 64k</a> | <a href="http://radio.cloudstaff.com/letsrock.mp3">MP3 128k</a> </p>
+				<p>If your Radio does not AutoPlay, click one of these links : <a href="http://radio.cloudstaff.com/letsrock.oog">ogg 64k</a> | <a href="http://radio.cloudstaff.com/letsrock.aac">AAC+ 64k</a> | <a href="http://radio.cloudstaff.com/letsrock.mp3">MP3 128k</a>					</p>
 			</div>
 			<div class="row">
 				<a href="http://radio.cloudstaff.com:8080/requester/request.php" class="button large" target="_blank">Request a Song</a>
+				<p>
+					Content for this radio station is officially licensed from:-
+					<br>
+					<strong>FILSCAP</strong> - Filipino Society of Composers,
+					<br> Authors and Publishers, Inc.
+				</p>
 			</div>
 		</div>
 	</section>

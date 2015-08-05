@@ -8,14 +8,14 @@
 }
 
 #pButton{
-	height: 60px !important; 
+	height: 60px !important;
 	width: 60px !important;
 	border: 3px solid #FFF;
 	border-radius: 50%;
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: center;
-	float:left;	
+	float:left;
 	margin-right: 30px;
 	&:hover{
 		background-color: #FFF;
@@ -52,12 +52,12 @@
 }
 
 #mButton {
-	height: 60px !important; 
+	height: 60px !important;
 	width: 60px !important;
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: center;
-	float:left;	
+	float:left;
 	margin-right: 30px;
 
 }
@@ -70,4 +70,8 @@
 .audioplayer-wrapper {
 	margin-bottom: 60px !important;
 	margin-top: 60px !important;
+}
+
+.now-playing{
+	margin-top: 20px;
 }

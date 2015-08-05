@@ -28,11 +28,11 @@ function clickPercent(e) {
 	return (e.pageX - timeline.offsetLeft) / timelineWidth;
 }
 
-// Makes playhead draggable 
+// Makes playhead draggable
 playhead.addEventListener('mousedown', mouseDown, false);
 window.addEventListener('mouseup', mouseUp, false);
 
-// Boolean value so that mouse is moved on mouseUp only when the playhead is released 
+// Boolean value so that mouse is moved on mouseUp only when the playhead is released
 var onplayhead = false;
 // mouseDown EventListener
 function mouseDown() {
@@ -67,8 +67,8 @@ function moveplayhead(e) {
 	}
 }
 
-// timeUpdate 
-// Synchronizes playhead position with current point in audio 
+// timeUpdate
+// Synchronizes playhead position with current point in audio
 function timeUpdate() {
 	var playPercent = timelineWidth * (music.currentTime / duration);
 	playhead.style.marginLeft = playPercent + "px";
@@ -111,10 +111,23 @@ function mute() {
 
 // Gets audio file duration
 music.addEventListener("canplaythrough", function () {
-	duration = music.duration;  
+	duration = music.duration;
 }, false);
 
+//Now Playing Text
 
-//PHP Code
-//$statusfile = file_get_contents("http://radio.cloudstaff.com:8080/status.xsl");
-//echo("Currently playing: " . extr($statusfile, 'Currently playing:</td><td class="streamstats">', '<'));
+var latestSongOnAir = "Cloudstaff Radio - Let's Rock!";
+
+function updateLatestSongOnAir() {
+       $.ajax({
+           url: "../now_playing/now_playing.txt",
+           cache: false,
+           success: function(data) {
+                   latestSongOnAir = data;
+                   $('#streamTitle').html(data);
+               }
+        });
+
+  };
+    updateLatestSongOnAir();
+  setInterval("updateLatestSongOnAir()", 15000);
